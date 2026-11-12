@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-main;
+  font-size: 16px;
+  color: $color-text;
+  background-color: $color-white;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid $color-navy;
+  outline-offset: 3px;
+}

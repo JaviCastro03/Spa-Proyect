@@ -1,0 +1,42 @@
+@use '../variables' as *;
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 481px;
+  margin-top: 67px;
+  padding: 26px 0 24px;
+  border-radius: 12px;
+  background-color: $color-card;
+  text-align: center;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: $color-mint;
+    box-shadow: 0 8px 18px rgba($color-mint, 0.6);
+  }
+
+  &__number {
+    margin-top: 18px;
+    font-size: 28px;
+    line-height: 42px;
+    color: $color-navy;
+  }
+
+  &__label {
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-gray;
+  }
+}

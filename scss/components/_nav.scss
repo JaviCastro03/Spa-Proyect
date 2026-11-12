@@ -1,0 +1,44 @@
+@use '../variables' as *;
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 15px;
+    color: $color-navy;
+    transition: color 0.3s;
+
+    // underline that grows on hover
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 2px;
+      background-color: $color-mint;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      color: $color-mint-dark;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+
+    &--more {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}

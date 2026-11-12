@@ -1,0 +1,17 @@
+{
+  "name": "spa-header",
+  "version": "1.0.0",
+  "description": "Static header-hero built with semantic HTML and Sass (BEM naming).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch scss/main.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.108.2"
+  }
+}

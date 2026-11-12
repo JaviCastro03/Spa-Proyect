@@ -1,0 +1,81 @@
+@use "../variables" as *;
+
+.hero {
+  position: relative;
+  height: $header-height - $bar-height;
+
+  &__content {
+    position: absolute;
+    top: 150px - $bar-height;
+    left: $side-space;
+    width: 580px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    color: $color-navy;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-gray;
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin-top: 42px;
+  }
+
+  // ---------- Decorative leaf inside the mint panel ----------
+  &__leaf {
+    position: absolute;
+    top: 86px - $bar-height;
+    left: 990px;
+    width: 300px;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  // ---------- Woman (transparent PNG) ----------
+  &__photo {
+    position: absolute;
+    bottom: 0;
+    left: 273px;
+    height: 806px;
+    width: auto;
+    z-index: 2;
+  }
+}
+
+// ---------- "Watch Video" link ----------
+.video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: $color-navy;
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $color-white;
+    box-shadow: 0 10px 24px rgba($color-navy, 0.16);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
+  }
+
+  &:hover .video-link__icon {
+    transform: scale(1.12);
+    box-shadow: 0 12px 26px rgba($color-navy, 0.28);
+  }
+}

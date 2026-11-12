@@ -1,0 +1,23 @@
+@use 'sass:color';
+
+// ---------- Colors (adjust them with Figma > Inspect if needed) ----------
+$color-navy: #264370;
+$color-navy-hover: color.adjust($color-navy, $lightness: -6%);
+$color-mint: #a8d5ca;
+$color-mint-dark: #4e9f8e;
+$color-cream: #faf8f4;
+$color-card: #fdfcfa;
+$color-white: #ffffff;
+$color-text: #1c2b40;
+$color-gray: #8e8e8e;
+
+// ---------- Typography ----------
+$font-main: 'Poppins', sans-serif;
+
+// ---------- Layout (static design, 1440px wide) ----------
+$layout-width: 1440px;
+$header-height: 810px;
+$bar-height: 92px;
+$band-height: 615px; // height of the cream band and the mint panel
+$mint-panel-start: 964px; // x where the mint panel starts
+$side-space: 120px;

@@ -1,0 +1,41 @@
+@use '../variables' as *;
+
+.testimonial {
+  position: absolute;
+  z-index: 3;
+  width: 304px;
+  padding: 18px 16px 18px 17px;
+  border-radius: 14px;
+  background-color: rgba($color-white, 0.55);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: $color-text;
+
+  &--top {
+    top: 327px - $bar-height;
+    left: 1087px;
+  }
+
+  &--bottom {
+    top: 561px - $bar-height;
+    left: 981px;
+  }
+
+  &__icon {
+    margin-bottom: 6px;
+    color: $color-navy;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__author {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: $color-navy;
+  }
+}
